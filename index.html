@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Онлайн Магазин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Магазин гаджетів</h1>
+    <div class="controls">
+      <input type="text" id="search-input" placeholder="Пошук товарів...">
+      <button id="cart-btn">
+        🛒 Кошик (<span id="cart-count">0</span>)
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div id="products-container" class="products-grid"></div>
+  </main>
+
+  <!-- Модальне вікно кошика -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-cart">&times;</span>
+      <h2>Ваш кошик</h2>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <strong>Загальна сума: <span id="cart-total">0</span> грн</strong>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
